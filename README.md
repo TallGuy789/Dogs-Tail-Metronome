@@ -67,4 +67,6 @@ Dog's Tail is an online metronome app with some unique features. Used creatively
 Contributions are welcome! Please open issues or submit pull requests for improvements.
 
 ## License
-Specify your license here.
+
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
