@@ -1,0 +1,3 @@
+# Ensure all text files use Windows-style line endings in git
+[*]
+eol=crlf
