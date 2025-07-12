@@ -1,0 +1,14 @@
+# Custom GitHub Copilot Prompts
+# Place your custom Copilot prompt instructions below. These will be used by Copilot to guide code suggestions for this project.
+
+# Example:
+# - Always use tab indentation.
+# - Use CRLF for line endings.
+# - Prefer functional components in Vue.js.
+# - Use JavaScript (not TypeScript) unless otherwise specified.
+# - Write concise, well-documented code.
+
+# Add your own prompts below:
+Examine the readme file for context, but don't implement anything in it unless explicitly ask to.
+
+Prepend "Copilot: " to all Git commit messages.
