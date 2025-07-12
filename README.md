@@ -15,6 +15,7 @@ Dog's Tail is an online metronome app with some unique features. Used creatively
 3. Follow the setup instructions (to be added).
 
 ## Primary Application Features
+- [ ] There are two pages, the main page, which has the metronome on it, and a settings page.
 - [ ] There is a start / stop button to start the beats or to stop them.
 - [ ] Any option can be changed while the metronome is running. It will adjust accordingly.
 - [ ] Beats Per Minute (BPM) can be specified from 1 to 200.
@@ -34,11 +35,13 @@ Dog's Tail is an online metronome app with some unique features. Used creatively
 ## Secondary Application Features
 - [ ] There is a master volume control.
 - [ ] There is an option to accent the first beat. The default is true.
+- [ ] Copy and paste settings.
 - [ ] There is a dropdown option to cycle the background colour through various colour sequences with each beat.
-- [ ] There is an 'Advanced Options' page.
+- [ ] There is an 'Settings' page.
   - [ ] The pitch (in Hz) and duration (in milliseconds) for the accent beat can be set.
   - [ ] The pitch (in Hz) and duration (in milliseconds) for the main beat can be set.
   - [ ] The pitch (in Hz) and duration (in milliseconds) for the subdivision beat can be set.
+  - [ ] Type of copy and paste.
 - [ ] There is a Tap button that can be used to set the BPM.
 - [ ] There is a 'Off Beat' option. Default is off.
   - [ ] When the 'Off Beat' option is on, the metronome will start by speaking the 'on beat' using TTS. It will then fade in the 'off beat' tick. It will then fade out the speaking 'on beat'.
@@ -49,6 +52,7 @@ Dog's Tail is an online metronome app with some unique features. Used creatively
 - [ ] Progressive Web App that will run on desktop and Android devices.
 - [ ] Exactly the same build will be used for desktop and mobile devices.
 - [ ] All settings are stored in the browser's local storage and read when the application first starts.
+- [ ] The timing function for the metronome will run on a service thread so that it will continue if the mobile device goes to sleep.
 - [ ] Mobile first, responsive layout.
 - [ ] There will be unit tests.
 - [ ] There will be linting to ensure consistent formatting.
