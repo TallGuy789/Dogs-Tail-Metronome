@@ -32,6 +32,7 @@ Dog's Tail is an online metronome app with some unique features. Used creatively
   - [ ] When the 'Random Beat Mute' is on, the current percentage is displayed.
 
 ## Secondary Application Features
+- [ ] There is a master volume control.
 - [ ] There is an option to accent the first beat. The default is true.
 - [ ] There is a dropdown option to cycle the background colour through various colour sequences with each beat.
 - [ ] There is an 'Advanced Options' page.
