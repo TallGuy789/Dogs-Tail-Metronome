@@ -1,35 +1,184 @@
 # User Interface Specification
 
-## Components
+## Application Structure
 
-**Application Title**  
-Displayed at the top of the page. Has the text "Dog's Tail".
-
-**Toolbar Row**  
-Type is UI row. Displayed below the **Application Title**.
-
-**Settings Toolbar Button**  
-Type is Toolbar Button. Icon is a cog. Contained in the **Toolbar Row**.
-
-**About Toolbar Button**  
-Type is Toolbar Button. Icon is an explanation mark with a circle around it. Contained in the **Toolbar Row**.
+The application consists of three main pages:
+1. **Main Page** - Contains the metronome interface and primary controls
+2. **Preferences Page** - Contains user preference options
+2. **About Page** - Contains information about the application
 
 ---
 
-**Main Content Area**  
-Primary area where the application's main content is displayed. Located below the **Toolbar Row**.
+## Main Page Components
 
+### Header Section
 
-**Settings Panel**  
-Accessible via the **Settings Toolbar Button**. Allows configuration of user preferences, notification settings, and other options.
+**Application Title**
+Displayed at the top of the page. Has the text "Dog's Tail".
 
-**Footer**  
-Displays copyright and licence. References tools and libraries used to build the application.
+**Toolbar Row**
+Type is UI row. Displayed below the **Application Title**.
+
+**Preferences Toolbar Button**
+Type is Toolbar Button. Icon is a cog. Contained in the **Toolbar Row**. Selecting the button opens the **Preferences Section**.
+
+**About Toolbar Button**
+Type is Toolbar Button. Icon is an explanation mark with a circle around it. Contained in the **Toolbar Row**. Selecting the button opens the **About Section**.
+
+---
+
+### Primary Controls Section
+
+**Start/Stop Button**
+Large, prominent button to start or stop the metronome. Changes label and visual state based on current playback status.
+
+**BPM Controls Group**
+Contains all BPM-related controls:
+
+**BPM Numeric Input**
+Number input field allowing direct entry of BPM values (1-200).
+
+**BPM Slider**
+Slider control for quick BPM adjustment (1-200). Linked bidirectionally with the numeric input.
+
+**Mobile BPM Buttons** (Mobile Only)
+- **Fast Decrease Button** - Decreases BPM by 10
+- **Decrease Button** - Decreases BPM by 1
+- **Increase Button** - Increases BPM by 1
+- **Fast Increase Button** - Increases BPM by 10
+
+**Tap Tempo Button**
+Button for setting BPM by tapping rhythm. Calculates and sets BPM based on tap intervals.
+
+---
+
+### Metronome Configuration Section
+
+**Beats Per Measure Control**
+Numeric input or selector for beats per measure (1-24, default: 4).
+
+**Subdivisions Control**
+Numeric input or selector for number of subdivisions per beat (0-24, default: 0).
+
+**Accent First Beat Toggle**
+Checkbox or toggle switch to enable/disable accenting the first beat (default: true).
+
+**Master Volume Control**
+Slider or dial control for overall volume adjustment (default: 100%).
+
+---
+
+### Advanced Features Section
+
+**Random Beat Mute Group**
+Toggle to enable random beat muting with additional controls:
+- **Mute Percentage Slider** - Sets percentage of beats to mute (0-100%, default 30%)
+- **Mute Delay Input** - Number of measures before muting starts (0-20, default 3)
+- **Current Mute Percentage Display** - Shows active mute percentage when enabled
+
+**Off Beat Group**
+Toggle to enable off beat feature with additional controls:
+- **Off Beat Type Selector** - Selector with options: '1/4', '2/4' (default), '3/4', '1/3', '2/3'
+- **Off Beat Delay Input** - Number of measures before fade-in starts (0-20, default 3)
+
+**Background Colour Cycling Selector**
+Selector for background colour sequence options that cycle with each beat. Options are "Cycle: Black, White" (default), "Cycle: Black, Grey, White, Grey", "Cycle: Red, Green, Blue", "Cycle: Red, Yellow, Green, Purple, Orange, Blue", "Pulse: Black", "Pulse: White", "Pulse: Black, White", "Pulse: Black, Grey, White, Grey", "Pulse: Red, Green, Blue", "Pulse: Red, Yellow, Green, Purple, Orange, Blue".
+
+---
+
+### Settings & Utilities Section
+
+**Copy/Paste Settings Controls**
+Buttons or interface elements for copying and pasting metronome configurations.
+
+---
+
+## Preferences Section Components
+
+### Audio Configuration Section
+
+**Accent Beat Settings**
+- **Pitch Input** - Frequency in Hz for accent beats
+- **Duration Input** - Duration in milliseconds for accent beats
+- **Volume Input** - Volume in percentage for accent beats
+
+**Main Beat Settings**
+- **Pitch Input** - Frequency in Hz for main beats
+- **Duration Input** - Duration in milliseconds for main beats
+- **Volume Input** - Volume in percentage for main beats
+
+**Subdivision Beat Settings**
+- **Pitch Input** - Frequency in Hz for subdivision beats
+- **Duration Input** - Duration in milliseconds for subdivision beats
+- **Volume Input** - Volume in percentage subdivision beats
+
+### Application Settings Section
+
+**Copy/Paste Type Selector**
+Configuration options for copy/paste functionality behaviors. Options are "Code Only" (default), "Code + short human label", "Code + full human label".
+
+**Navigation Controls**
+Button or link to return to the Main Page.
+
+---
+
+## About Section Components
+
+### Practice Section
+
+Text that describes tips and techniques for using the metronome to improve musical skills.
+
+### Tools and libraries Section
+
+Text that describes the tools and libraries used to build the application.
+
+---
+
+## Common Components
+
+**Main Content Area**
+Primary area where the application's main content is displayed. Contains either the Main Page or Settings Page content.
+
+**Footer**
+Displays copyright and licence.
+
+---
+
+## Responsive Behavior
+
+### Mobile-Specific Elements
+- BPM adjustment buttons (fast decrease, decrease, increase, fast increase)
+- Touch-optimized controls and larger tap targets
+- Simplified layout prioritizing essential controls
+
+### Desktop-Specific Elements
+- More compact layout with additional screen real estate
+- Keyboard shortcuts and navigation
+- Enhanced precision controls
+
+---
+
+## Visual States & Feedback
+
+**Active/Playing State**
+Visual indicators when metronome is running:
+- Start/Stop button shows "Stop" state
+- Beat visualization or pulsing effects
+- Background color cycling (if enabled)
+
+**Muted Beat Indicators**
+Visual feedback when random beat mute is active showing which beats are muted.
+
+**Off Beat Visual Feedback**
+Visual indicators during off beat mode transitions and TTS playback.
 
 ---
 
 ## Notes
 
-- All controls should be accessible and keyboard-navigable.
-- Icons should be consistent and follow the chosen design system.
-- Responsive layout for desktop and mobile devices.
+- All controls should be accessible and keyboard-navigable
+- Icons should be consistent and follow the chosen design system
+- Mobile-first, responsive layout for desktop and mobile devices
+- Real-time updates: Any setting can be changed while metronome is running
+- All settings automatically saved to browser local storage
+- Progressive Web App capabilities for offline use and mobile installation
