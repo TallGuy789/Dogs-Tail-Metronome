@@ -29,67 +29,99 @@ Type is Toolbar Button. Icon is an explanation mark with a circle around it. Con
 
 ### Primary Controls Section
 
+#### Row Start Stop
+
 **Start/Stop Button**
 Large, prominent button to start or stop the metronome. Changes label and visual state based on current playback status.
 
-**BPM Controls Group**
-Contains all BPM-related controls:
+**Status Label**
+A readonly label that displays various status updates.
+
+#### Row BPM 1
+
+**Fast Decrease Button**
+Decreases BPM by 10.
+
+**Decrease Button**
+Decreases BPM by 1.
 
 **BPM Numeric Input**
-Number input field allowing direct entry of BPM values (1-200).
+Number input field allowing direct entry of BPM values (1 - 200).
 
-**BPM Slider**
-Slider control for quick BPM adjustment (1-200). Linked bidirectionally with the numeric input.
+**Increase Button**
+Increases BPM by 1.
 
-**Mobile BPM Buttons** (Mobile Only)
-- **Fast Decrease Button** - Decreases BPM by 10
-- **Decrease Button** - Decreases BPM by 1
-- **Increase Button** - Increases BPM by 1
-- **Fast Increase Button** - Increases BPM by 10
+**Fast Increase Button**
+Increases BPM by 10.
 
 **Tap Tempo Button**
 Button for setting BPM by tapping rhythm. Calculates and sets BPM based on tap intervals.
 
----
+#### Row BPM 2
 
-### Metronome Configuration Section
+**BPM Numeric Input**
+Numeric input for BPM (1 - 200, default: 80). Value is linked to the **BPM Slider**.
 
-**Beats Per Measure Control**
-Numeric input or selector for beats per measure (1-24, default: 4).
+**BPM Slider**
+Slider control for quick BPM adjustment (1 - 200, default: 80). Value is linked to the **BPM Numeric Input**.
 
-**Subdivisions Control**
-Numeric input or selector for number of subdivisions per beat (0-24, default: 0).
+#### Row Misc
+
+**Beats Per Measure Numeric Input**
+Numeric input for beats per measure (1 - 24, default: 4).
+
+**Subdivisions Numeric Input**
+Numeric input for number of subdivisions per beat (0 - 24, default: 0).
 
 **Accent First Beat Toggle**
 Checkbox or toggle switch to enable/disable accenting the first beat (default: true).
 
-**Master Volume Control**
-Slider or dial control for overall volume adjustment (default: 100%).
+#### Row Master Volume
+
+**Master Volume Numeric Input**
+Number input field allowing direct entry of overall volume (0% - 100%, default: 100%). Value is linked to the **Master Volume Control**.
+
+**Master Volume Slider**
+Slider control for overall volume (0% - 100%, default: 100%). Value is linked to the **Master Volume Numeric Input**.
 
 ---
 
 ### Advanced Features Section
 
-**Random Beat Mute Group**
-Toggle to enable random beat muting with additional controls:
-- **Mute Percentage Slider** - Sets percentage of beats to mute (0-100%, default 30%)
-- **Mute Delay Input** - Number of measures before muting starts (0-20, default 3)
-- **Current Mute Percentage Display** - Shows active mute percentage when enabled
+#### Random Beat Mute Group
 
-**Off Beat Group**
-Toggle to enable off beat feature with additional controls:
-- **Off Beat Type Selector** - Selector with options: '1/4', '2/4' (default), '3/4', '1/3', '2/3'
-- **Off Beat Delay Input** - Number of measures before fade-in starts (0-20, default 3)
+**Random Beat Mute Toggle**
+Toggle to enable Random Beat Muting mode. Default is off. Label is 'Random Beat Mute'.
+
+**Mute Percentage Slider**
+Sets percentage of beats to mute (0-100%, default 30%). Hidden when Random Beat Mute is off.
+
+**Mute Delay Numeric Input**
+Number of measures before muting starts (0-20, default 3). Hidden when Random Beat Mute is off.
+
+#### Off Beat Group
+
+**Off Beat Toggle**
+Toggle to enable Off Beat mode.
+
+**Off Beat Type Selector**
+Selector with options: '1/4', '2/4' (default), '3/4', '1/3', '2/3'. Hidden when Off Beat is off.
+
+**Off Beat Delay Numeric Input**
+Number of measures before fade-in starts (0-20, default 3). Hidden when Off Beat is off.
+
+#### Background Colour Cycling Group
 
 **Background Colour Cycling Selector**
 Selector for background colour sequence options that cycle with each beat. Options are "Cycle: Black, White" (default), "Cycle: Black, Grey, White, Grey", "Cycle: Red, Green, Blue", "Cycle: Red, Yellow, Green, Purple, Orange, Blue", "Pulse: Black", "Pulse: White", "Pulse: Black, White", "Pulse: Black, Grey, White, Grey", "Pulse: Red, Green, Blue", "Pulse: Red, Yellow, Green, Purple, Orange, Blue".
 
----
+#### Copy Paste Settings Group
 
-### Settings & Utilities Section
+**Copy Settings Button**
+Copies the current settings into the clipboard. Label is 'Copy Settings'. Hidden when resolution indicates a mobile device.
 
-**Copy/Paste Settings Controls**
-Buttons or interface elements for copying and pasting metronome configurations.
+**Copy Settings Button**
+Reads the clipboard and, if valid, updates the current settings. Label is 'Paste Settings'. Hidden when resolution indicates a mobile device.
 
 ---
 
@@ -124,6 +156,10 @@ Button or link to return to the Main Page.
 
 ## About Section Components
 
+### Dedication Section
+
+Text that dedicates the application to Hugo. Hugo was a yellow Labrador. His full name was "Baron Hugo von Metronome". There is a photo of Hugo.
+
 ### Practice Section
 
 Text that describes tips and techniques for using the metronome to improve musical skills.
@@ -141,20 +177,6 @@ Primary area where the application's main content is displayed. Contains either 
 
 **Footer**
 Displays copyright and licence.
-
----
-
-## Responsive Behavior
-
-### Mobile-Specific Elements
-- BPM adjustment buttons (fast decrease, decrease, increase, fast increase)
-- Touch-optimized controls and larger tap targets
-- Simplified layout prioritizing essential controls
-
-### Desktop-Specific Elements
-- More compact layout with additional screen real estate
-- Keyboard shortcuts and navigation
-- Enhanced precision controls
 
 ---
 
