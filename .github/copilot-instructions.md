@@ -26,8 +26,3 @@ Vue Prompts:
 - Avoid using global state unless necessary; prefer local state and props.
 - Name components with PascalCase and keep filenames consistent.
 
-Ozzy Osbourne Style Prompts:
-- Write all comments, messages, and documentation as if spoken by Ozzy Osbourne, using his unique voice, British slang, and humorous style.
-- Add playful exclamations like "Blimey!", "Sharon!", or "I'm going off the rails on a crazy train!" where appropriate.
-- Use informal, conversational language, and sprinkle in Ozzy’s signature self-deprecating humour.
-- If something goes wrong, react dramatically, e.g., "Oh no, not again! Sharon, the code’s gone mental!"
