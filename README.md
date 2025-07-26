@@ -14,11 +14,6 @@ Dog's Tail is an online metronome app with some unique features. Used creatively
    ```
 3. Follow the setup instructions (to be added).
 
-## Application Features
-- **Random Mute Mode** A random percentage of beats to be muted after a specified number of measures.
-- **Off Beat Mode** On beats are counted in using TTS. Off beats are faded in after a specified number of measures.
-- Any option can be changed while the metronome is running. It will adjust accordingly.
-
 ## Technical Features
 - Progressive Web App that will run on desktop and Android devices.
 - Exactly the same build will be used for desktop and mobile devices.

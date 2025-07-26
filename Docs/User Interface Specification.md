@@ -2,7 +2,7 @@
 
 ## Application Structure
 
-The application consists of three main pages:
+The application consists of three pages:
 1. **Main Page** - Contains the metronome interface and primary controls
 2. **Preferences Page** - Contains user preference options
 2. **About Page** - Contains information about the application
@@ -20,10 +20,10 @@ Displayed at the top of the page. Has the text "Dog's Tail".
 Type is UI row. Displayed below the **Application Title**.
 
 **Preferences Toolbar Button**
-Type is Toolbar Button. Icon is a cog. Contained in the **Toolbar Row**. Selecting the button opens the **Preferences Section**.
+Type is Toolbar Button. Icon is a cog. Contained in the **Toolbar Row**. Selecting the button opens the **Preferences Page**.
 
 **About Toolbar Button**
-Type is Toolbar Button. Icon is an explanation mark with a circle around it. Contained in the **Toolbar Row**. Selecting the button opens the **About Section**.
+Type is Toolbar Button. Icon is an explanation mark with a circle around it. Contained in the **Toolbar Row**. Selecting the button opens the **About Page**.
 
 ---
 
@@ -37,44 +37,41 @@ Large, prominent button to start or stop the metronome. Changes label and visual
 **Status Label**
 A readonly label that displays various status updates.
 
-#### Row BPM 1
+#### Row Beats Per Minute 1
 
 **Fast Decrease Button**
-Decreases BPM by 10.
+Decreases **Beats Per Minute** by 10.
 
 **Decrease Button**
-Decreases BPM by 1.
+Decreases **Beats Per Minute** by 1.
 
-**BPM Numeric Input**
-Number input field allowing direct entry of BPM values (1 - 200).
+**Beats Per Minute Numeric Input**
+Numeric input for **Beats Per Minute** (1 - 200, default: 80). Value is linked to the **Beats Per Minute Slider**.
 
 **Increase Button**
-Increases BPM by 1.
+Increases **Beats Per Minute** by 1.
 
 **Fast Increase Button**
-Increases BPM by 10.
+Increases **Beats Per Minute** by 10.
 
 **Tap Tempo Button**
-Button for setting BPM by tapping rhythm. Calculates and sets BPM based on tap intervals.
+Button for setting **Beats Per Minute** by tapping rhythm. Calculates and sets **Beats Per Minute** based on tap intervals.
 
-#### Row BPM 2
+#### Row Beats Per Minute 2
 
-**BPM Numeric Input**
-Numeric input for BPM (1 - 200, default: 80). Value is linked to the **BPM Slider**.
-
-**BPM Slider**
-Slider control for quick BPM adjustment (1 - 200, default: 80). Value is linked to the **BPM Numeric Input**.
+**Beats Per Minute Slider**
+Slider control for quick **Beats Per Minute** adjustment (1 - 200, default: 80). Value is linked to the **Beats Per Minute Numeric Input**.
 
 #### Row Misc
 
 **Beats Per Measure Numeric Input**
-Numeric input for beats per measure (1 - 24, default: 4).
+Numeric input for **Beats Per Measure** (1 - 24, default: 4). Label is "Beats Per Measure"
 
 **Subdivisions Numeric Input**
-Numeric input for number of subdivisions per beat (0 - 24, default: 0).
+Numeric input for number of subdivisions per beat (0 - 24, default: 0). Label is "Subdivisions". This control is for a future feature. For now, it will do nothing.
 
 **Accent First Beat Toggle**
-Checkbox or toggle switch to enable/disable accenting the first beat (default: true).
+Checkbox or toggle switch to enable or disable **Accent First Beat Mode** (default: enable).
 
 #### Row Master Volume
 
@@ -113,36 +110,39 @@ Number of measures before fade-in starts (0-20, default 3). Hidden when Off Beat
 #### Background Colour Cycling Group
 
 **Background Colour Cycling Selector**
-Selector for background colour sequence options that cycle with each beat. Options are "Cycle: Black, White" (default), "Cycle: Black, Grey, White, Grey", "Cycle: Red, Green, Blue", "Cycle: Red, Yellow, Green, Purple, Orange, Blue", "Pulse: Black", "Pulse: White", "Pulse: Black, White", "Pulse: Black, Grey, White, Grey", "Pulse: Red, Green, Blue", "Pulse: Red, Yellow, Green, Purple, Orange, Blue".
+Selector for background colour sequence options that cycle with each beat. Options are "Cycle: Black, White" (default), "Cycle: Black, Grey, White, Grey", "Cycle: Red, Green, Blue", "Cycle: Red, Yellow, Green, Purple, Orange, Blue", "Pulse: Black", "Pulse: White", "Pulse: Black, White", "Pulse: Black, Grey, White, Grey", "Pulse: Red, Green, Blue", "Pulse: Red, Yellow, Green, Purple, Orange, Blue". This control is for a future feature. For now, it will do nothing.
 
 #### Copy Paste Settings Group
 
 **Copy Settings Button**
-Copies the current settings into the clipboard. Label is 'Copy Settings'. Hidden when resolution indicates a mobile device.
+Copies the current settings into the clipboard. Label is 'Copy Settings'. Hidden when resolution indicates a mobile device. This control is for a future feature. For now, it will do nothing.
 
 **Copy Settings Button**
-Reads the clipboard and, if valid, updates the current settings. Label is 'Paste Settings'. Hidden when resolution indicates a mobile device.
+Reads the clipboard and, if valid, updates the current settings. Label is 'Paste Settings'. Hidden when resolution indicates a mobile device. This control is for a future feature. For now, it will do nothing.
 
 ---
 
-## Preferences Section Components
+## Preferences Page Components
 
 ### Audio Configuration Section
 
+**Accent First Beat Toggle**
+Toggle to enable **Accent First Beat Mode**. Default is enabled. Label is 'Accent First Beat'.
+
 **Accent Beat Settings**
-- **Pitch Input** - Frequency in Hz for accent beats
-- **Duration Input** - Duration in milliseconds for accent beats
-- **Volume Input** - Volume in percentage for accent beats
+- **Accent Beat Pitch Input** - Frequency in Hz for accent beats
+- **Accent Beat Duration Input** - Duration in milliseconds for accent beats
+- **Accent Beat Volume Input** - Volume in percentage for accent beats
 
 **Main Beat Settings**
-- **Pitch Input** - Frequency in Hz for main beats
-- **Duration Input** - Duration in milliseconds for main beats
-- **Volume Input** - Volume in percentage for main beats
+- **Main Beat Pitch Input** - Frequency in Hz for main beats
+- **Main Beat Duration Input** - Duration in milliseconds for main beats
+- **Main Beat Volume Input** - Volume in percentage for main beats
 
 **Subdivision Beat Settings**
-- **Pitch Input** - Frequency in Hz for subdivision beats
-- **Duration Input** - Duration in milliseconds for subdivision beats
-- **Volume Input** - Volume in percentage subdivision beats
+- **Subdivision Beat Pitch Input** - Frequency in Hz for subdivision beats. This control is for a future feature. For now, it will do nothing.
+- **Subdivision Beat Duration Input** - Duration in milliseconds for subdivision beats. This control is for a future feature. For now, it will do nothing.
+- **Subdivision Beat Volume Input** - Volume in percentage subdivision beats. This control is for a future feature. For now, it will do nothing.
 
 ### Application Settings Section
 
@@ -154,7 +154,7 @@ Button or link to return to the Main Page.
 
 ---
 
-## About Section Components
+## About Page Components
 
 ### Dedication Section
 
