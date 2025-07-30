@@ -11,18 +11,4 @@
 # Add your own prompts below:
 Examine the README file and the User Interface Specification file for context, but don't implement anything in them unless explicitly ask to.
 
-Prepend "Copilot: " to all Git commit messages.
-
-Vue Prompts:
-- When creating Vue components, break them up into small, reusable components. Don't just make one big component.
-- Use the Composition API for new components unless otherwise specified.
-- Always define props with clear types and default values.
-- Use v-model for two-way data binding where appropriate.
-- Keep component logic and template structure clean and separated.
-- Prefer emitting custom events over directly modifying parent data.
-- Document all props, events, and slots in each component.
-- Use scoped CSS to avoid style conflicts.
-- Write unit tests for each component.
-- Avoid using global state unless necessary; prefer local state and props.
-- Name components with PascalCase and keep filenames consistent.
-
+Prepend "Copilot: " to all Git commit messages. Always do a Git push after a commit.
