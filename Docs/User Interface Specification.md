@@ -70,9 +70,6 @@ Numeric input for **Beats Per Measure** (1 - 24, default: 4). Label is "Beats Pe
 **Subdivisions Numeric Input**
 Numeric input for number of subdivisions per beat (0 - 24, default: 0). Label is "Subdivisions". This control is for a future feature. For now, it will do nothing.
 
-**Accent First Beat Toggle**
-Checkbox or toggle switch to enable or disable **Accent First Beat Mode** (default: enable).
-
 #### Row Master Volume
 
 **Master Volume Numeric Input**
@@ -117,7 +114,7 @@ Selector for background colour sequence options that cycle with each beat. Optio
 **Copy Settings Button**
 Copies the current settings into the clipboard. Label is 'Copy Settings'. Hidden when resolution indicates a mobile device. This control is for a future feature. For now, it will do nothing.
 
-**Copy Settings Button**
+**Paste Settings Button**
 Reads the clipboard and, if valid, updates the current settings. Label is 'Paste Settings'. Hidden when resolution indicates a mobile device. This control is for a future feature. For now, it will do nothing.
 
 ---

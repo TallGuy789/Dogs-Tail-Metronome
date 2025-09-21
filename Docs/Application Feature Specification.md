@@ -1,5 +1,11 @@
 # Application Features Specification
 
+## Platform
+
+- The application will be a PWA (Progressive Web App).
+- Primary target platform will be any modern desktop web browser on any OS.
+- Secondary target platforms will be mobile devices either through the mobile browser or PWA installation. Note that iOS does not support PWAs.
+
 ## Metronome Mode
 
 - The **Start/Stop Button** control will toggle **Metronome Mode** between start or stop.
@@ -47,6 +53,7 @@ An **Off Beat** is:
 
 - The **Off Beat Toggle** control will toggle **Off Beat Mode** between enabled or disabled.
 - When enabled, the metronome will start by sounding the **On Beats** only.
+- When enabled, Accent First Beat mode is disabled and does not function, regardless of the Accent First Beat Toggle setting.
 - After the number of measures specified by the **Off Beat Delay Numeric Input** control have passed, the **Off Beats** will also sound.
 - After the number of measures specified by the **Off Beat Delay Numeric Input** control have passed again, the **On Beats** will stop.
 - This will continue until the metronome is stopped.
