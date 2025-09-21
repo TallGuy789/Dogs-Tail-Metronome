@@ -7,12 +7,12 @@ defineProps({
 <template>
 	<div class="greetings">
 		<h3>{{ msg }}</h3>
-		<p>
-			This is a simple Vue.js demo application for the Dog's Tail metronome project.
-		</p>
+		<p>This is a simple Vue.js demo application for the Dog's Tail metronome project.</p>
 		<p>
 			The metronome functionality will be built in future iterations according to the
-			<a href="./Docs/Implementation%20Plan.md" target="_blank" rel="noopener">Implementation Plan</a>.
+			<a href="./Docs/Implementation%20Plan.md" target="_blank" rel="noopener"
+				>Implementation Plan</a
+			>.
 		</p>
 	</div>
 </template>
