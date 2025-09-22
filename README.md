@@ -4,15 +4,60 @@ Dog's Tail is an online metronome app with some unique features. Used creatively
 
 ## Getting Started
 
+### Prerequisites
+- Node.js (version 16 or higher)
+- npm (comes with Node.js)
+
+### Installation
+
 1. Clone the repository:
    ```sh
    git clone <repo-url>
    ```
 2. Navigate to the project directory:
    ```sh
-   cd DogsTail
+   cd "Dogs Tail"
    ```
-3. Follow the setup instructions (to be added).
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+### Development
+
+Start the development server:
+```sh
+npm run dev
+```
+This will start the application at `http://localhost:3000/` with hot reloading enabled.
+
+### Building for Production
+
+Build the application for production:
+```sh
+npm run build
+```
+The built files will be generated in the `dist/` directory.
+
+### Code Quality
+
+Run ESLint to check for code quality issues:
+```sh
+npm run lint
+```
+
+Format code with Prettier:
+```sh
+npm run format
+```
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
 
 ## Technical Features
 - Progressive Web App that will run on desktop and Android devices.
