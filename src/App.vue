@@ -11,6 +11,7 @@ import HelloWorld from './components/HelloWorld.vue'
 		<main>
 			<HelloWorld msg="Welcome to your Vue.js App!" />
 		</main>
+		<strong>New version.</strong>
 	</div>
 </template>
 
