@@ -14,6 +14,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20.x'
+          check-latest: true
           cache: 'npm'
       # Optional: run tests explicitly before deploy
       - run: npm ci
@@ -26,3 +27,4 @@ jobs:
           output_location: 'dist'
           skip_app_build: false
           skip_api_build: true
+
